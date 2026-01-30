@@ -3,9 +3,10 @@ name: Feishu Daily Reminder
 on:
   schedule:
     # UTC time. Beijing is UTC+8.
-    - cron: '30 1 * * *'   # 09:30 CST (Morning)
-    - cron: '30 4 * * *'   # 12:30 CST (Lunch)
-    - cron: '00 11 * * *'  # 19:00 CST (Evening)
+    # Shifted earlier to avoid GitHub Runner queue delays at peak hours
+    - cron: '25 1 * * *'   # 09:25 CST (Target 09:30)
+    - cron: '25 4 * * *'   # 12:25 CST (Target 12:30)
+    - cron: '45 10 * * *'  # 18:45 CST (Target 19:00)
   workflow_dispatch:
     inputs:
       reminder_type:
