@@ -1,0 +1,30 @@
+name: Clock-in Reminder
+
+on:
+  schedule:
+    # UTC time. Beijing is UTC+8.
+    # Target: 09:30 CST | Trigger: 09:10 CST (UTC 01:10) to buffer delay
+    - cron: '10 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Morning Reminder
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: |
+          # Force type to morning regardless of execution time
+          python src/main.py morning
