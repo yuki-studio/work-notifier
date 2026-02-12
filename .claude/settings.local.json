@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(move:*)",
+      "Bash(move debug_api.py tasksclockin )",
+      "Bash(move debug_workday_now.py tasksclockin)"
+    ]
+  }
+}

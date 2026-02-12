@@ -1,0 +1,4 @@
+project_id = "YOUR_PROJECT_ID"
+
+[functions.notifier]
+verify_jwt = false

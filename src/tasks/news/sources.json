@@ -1,0 +1,57 @@
+{
+  "tech_blogs": [
+    {
+      "name": "36Kr",
+      "url": "https://www.36kr.com/feed/",
+      "enabled": true,
+      "category": "互联网/科技"
+    },
+    {
+      "name": "InfoQ中文",
+      "url": "https://www.infoq.cn/feed",
+      "enabled": true,
+      "category": "技术动态"
+    },
+    {
+      "name": "阮一峰的网络日志",
+      "url": "https://www.ruanyifeng.com/blog/atom.xml",
+      "enabled": true,
+      "category": "技术动态"
+    },
+    {
+      "name": "廖雪峰的官方网站",
+      "url": "https://www.liaoxuefeng.com/feeds/atom.xml",
+      "enabled": true,
+      "category": "技术动态"
+    },
+    {
+      "name": "掘金",
+      "url": "https://juejin.cn/feed/",
+      "enabled": true,
+      "category": "技术动态"
+    }
+  ],
+  "dev_tools": [
+    {
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "enabled": false,
+      "category": "开发工具",
+      "note": "需要网页解析"
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://hnrss.org/frontpage",
+      "enabled": true,
+      "category": "技术动态"
+    }
+  ],
+  "ai_llm": [
+    {
+      "name": "AI 科技大本营",
+      "url": "https://www.jiqizhixin.com/rss",
+      "enabled": true,
+      "category": "AI/LLM"
+    }
+  ]
+}
